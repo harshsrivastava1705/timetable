@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="icon" href="image/Profile picture.jpg" type="image/jpg" id="ico">
+
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>function lo(){AOS.init();}</script>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="style.css">
+<script>
+    function pe1(i)
+    {
+        var t=document.getElementById("pe1");
+        var q=document.getElementsByClassName("pe1");
+        t.innerHTML= q[i].innerHTML;
+    }
+    function pe2(i)
+    {
+        var t=document.getElementById("pe2");
+        var q=document.getElementsByClassName("pe2");
+        t.innerHTML= q[i].innerHTML;
+    }
+    function hours(i)
+    { 
+        var h=[["Computer Networks","Formal lanuguage and automata","Formal lanuguage and automata","FREE","FREE","Discrete Mathematics"],
+               ["pe1","Open Elective","Open Elective","pe2","Computer Networks(Batch 1)","Computer Networks(Batch 1)"],
+               ["FREE","Computer Networks","Indian traditional knowledge","pe1","Discrete Mathematics","Discrete Mathematics"],
+               ["pe2","pe1","FREE","Open Elective","Computer Networks(Batch 2)","Computer Networks(Batch 2)"],
+               ["FREE","Discrete Mathematics","Formal language and automata","Computer Networks","Analytical and logical thinking skills","Analytical and logical thinking skills"]];
+               
+      var links=new Map([["Computer Networks","https://meet.google.com/lookup/gvwmmxhuxc"],
+                            ["Formal language and automata","https://meet.google.com/lookup/bq6eiddy3e"],
+                            ["Discrete Mathematics","https://meet.google.com/lookup/befbaxkk6q"],
+                            ["Indian traditional knowledge","https://meet.google.com/lookup/h4wnhod6j2"],
+                            ["Computer Networks(Batch 1)","https://meet.google.com/lookup/bg42dxk57r"],
+                            ["Analytical and logical thinking skills","https://meet.google.com/lookup/f42jlppfyy"],
+                            ["Cryptography","https://meet.google.com/lookup/ds5ers2jye"],
+                            ["Biometrics","https://meet.google.com/lookup/a6v5zgf7vv"],
+                            ["IAS","https://meet.google.com/lookup/ecfmss7rit"],
+                            ["ML",""],
+                            ["SSDC",""],
+                            ["Hyrdrology",""],
+                            ["FREE","https://evarsity.srmist.edu.in/"]
+    ]);
+                            
+        var slots=document.getElementsByClassName("row-fluid");
+        for (iter=0;iter<6;iter++)
+        {
+            if(h[i-1][iter]=="pe1")
+            h[i-1][iter]=document.getElementById("pe1").innerHTML;
+            else if(h[i-1][iter]=="pe2")
+            h[i-1][iter]=document.getElementById("pe2").innerHTML;
+            slots[iter].innerHTML="<a href=\""+links.get(h[i-1][iter])+"\">"+h[i-1][iter];
+        
+        }        
+       // links.get("key");               
+                        
+    }
+
+
+</script>
+    <title>Time-table</title>
+</head>
+<body onload="hours(1)">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Select subjects</a>
+          </div>
+          <ul class="nav navbar-nav ">
+            <li class="dropdown">
+              <a class="dropdown-toggle"  data-toggle="dropdown" href="#" id="pe1">Professional Elective-1
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#" class="pe1" onclick="pe1(0)">IAS</a></li>
+                <li><a href="#"  class="pe1" onclick="pe1(1)">ML</a></li>
+                <li><a href="#"  class="pe1" onclick="pe1(2)">Biometrics</a></li>
+              </ul>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a class="dropdown-toggle " data-toggle="dropdown" href="#" id="pe2">Professional Elective-2
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#" class="pe2" onclick="pe2(0)">Cryptography</a></li>
+                <li><a href="#"  class="pe2" onclick="pe2(1)">Hydrology</a></li>
+                <li><a href="#"  class="pe2" onclick="pe2(2)">SSDC</a></li>
+              </ul>
+            </li>
+        </ul>
+        </div>
+      </nav>
+
+      <!--DO-1-->
+      <div id="table">
+          <div class="row-fluid " id="1">
+              <h2>Hours 1 and 2</h2>
+          </div>
+
+        <div class="row-fluid" id="2">
+            <h2>Hour 3</h2>
+        </div>
+        <div class="row-fluid" id="3">
+            <h2>Hour 4</h2>
+        </div>
+        <div class="row" id="break">
+            BREAK
+        </div>
+        <div class="row-fluid" id="4">
+            <h2>Hour 5</h2>
+        </div>
+        <div class="row-fluid" id="5">
+            <h2>Hour 6</h2>
+        </div>
+        <div class="row-fluid" id="6">
+            <h2>Hour 7</h2>
+        </div>
+      </div>
+<div class="container">
+      <div class="footer">
+        <nav class="navbar navbar-inverse" id="foot" >
+            <div class="container-fluid">
+                <div id="footer">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#">Select Day order</a>
+              </div>
+              
+              <ul class="nav navbar-nav">
+                <li><a href="#" onclick="hours(1)">1</a></li>
+                <li><a href="#" onclick="hours(2)">2</a></li>
+                <li><a href="#" onclick="hours(3)">3</a></li>
+                <li><a href="#" onclick="hours(4)">4</a></li>
+                <li><a href="#" onclick="hours(5)">5</a></li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+</body>
+</html>
