@@ -9,7 +9,7 @@ width:100%;
 .footer{
     position:fixed;
     bottom:0;
-    margin-left: 30%;
+    margin-left: 25%;
 }
 .navbar-brand:hover
 {
@@ -41,8 +41,8 @@ a:active{
 
 @media (max-width: 1000px){
     .footer{
-        width: 100%;
-        margin-left: 0%;;
+       
+        margin-left: 0%;
         text-align: center;
         margin-bottom: 2%;
         width:60%;
