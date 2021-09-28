@@ -25,22 +25,24 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="style.css">
 <script>
+    var d=1;
     function pe1(i)
     {
         var t=document.getElementById("pe1");
         var q=document.getElementsByClassName("pe1");
         t.innerHTML= q[i].innerHTML;
-        hours(1);
+        hours(window.d);
     }
     function pe2(i)
     {
         var t=document.getElementById("pe2");
         var q=document.getElementsByClassName("pe2");
         t.innerHTML= q[i].innerHTML;
-        hours(1);
+        hours(window.d);
     }
     function hours(i)
     { 
+        window.d=i;
         var h=[["Computer Networks","Formal language and automata","Formal language and automata","pe2","FREE","FREE"],
                ["pe1","Open Elective","Open Elective","Computer Networks","Computer Networks(Batch 1: 1-34)","Computer Networks(Batch 1: 1-34)"],
                ["Discrete Mathematics","Analytical and logical thinking skills","Formal language and automata","pe2","FREE","FREE"],
