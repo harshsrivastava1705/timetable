@@ -43,27 +43,28 @@
     function hours(i)
     { 
         window.d=i;
-        var h=[["Computer Networks","Formal language and automata","Formal language and automata","pe2","FREE","FREE"],
-               ["pe1","Open Elective","Open Elective","Computer Networks","Computer Networks(Batch 1: 1-34)","Computer Networks(Batch 1: 1-34)"],
-               ["Discrete Mathematics","FREE","Formal language and automata","Indian traditional knowledge","FREE","FREE"],
-               ["pe2","pe1","Discrete Mathematics","Open Elective","Computer Networks(Batch 2: 35-68)","Computer Networks(Batch 2: 35-68)"],
-               ["Analytical and logical thinking skills","Computer Networks","pe1","Discrete Mathematics","FREE","FREE"]];
+        var h=[["DBMS","AI","AI","Open Elective","FREE","Compiler Design","FREE","FREE","FREE"],
+               ["FREE","AI","AI","FREE","pe1","Open Elective","Open Elective","DBMS"],
+               ["Compiler Design","DBMS","pe2","pe1","FREE","FREE","FREE","FREE","FREE"],
+               ["FREE","DBMS","FREE","pe2","pe2","pe1","ESP","Compiler Design"],
+               ["ESP","Compiler Design","AI","pe2","FREE","FREE","FREE","FREE","FREE"]];
                
-      var links=new Map([["Computer Networks","https://meet.google.com/aqb-zdge-ujo?authuser=1"],
-                            ["Formal language and automata","https://meet.google.com/yho-fwnp-ewd"],
-                            ["Discrete Mathematics","https://meet.google.com/rig-bghn-rtq?authuser=1&hs=179"],
-                            ["Indian traditional knowledge","https://meet.google.com/bsm-mexp-yaa"],
-                            ["Computer Networks(Batch 1: 1-34)","https://accounts.google.com/AccountChooser/signinchooser?continue=https%3A%2F%2Fmeet.google.com%2Fxfa-fgek-qsi%3Fauthuser%3D0&hl=en_GB&flowName=GlifWebSignIn&flowEntry=AccountChooser"],
-                            ["Analytical and logical thinking skills","https://meet.google.com/erf-rieq-uns?authuser=1"],
-                            ["Cryptography","https://meet.google.com/zph-oece-dkv?authuser=1"],
+      var links=new Map([["DBMS","https://meet.google.com/mjw-yjxg-kvx"],
+                            ["AIhttps://meet.google.com/yod-sqpr-ixt"],
+                            ["Compiler Design","https://meet.google.com/esb-vusz-mvn"],
+                            ["ESP","https://meet.google.com/gpx-kofp-ghh"],
+                            ["PTVA","https://meet.google.com/ipg-dfmy-fss"],
+                            ["FIR","https://meet.google.com/ije-nthn-etu],
+                            ["Open Elective","https://www.youtube.com/watch?v=dQw4w9WgXcQ"],
+                            ["FREE","https://evarsity.srmist.edu.in/"],
+                             
+                            ["VAP","https://meet.google.com/ipg-dfmy-fss"],
                             ["Biometrics","https://meet.google.com/lookup/a6v5zgf7vv"],
                             ["IAS","https://meet.google.com/lookup/ecfmss7rit"],
                             ["ML","https://meet.google.com/lookup/asannsrdta"],
                             ["SSDC","https://meet.google.com/lookup/exaw775rb4"],
                             ["Hyrdrology","https://meet.google.com/lookup/bcr7x3nqso"],
-                            ["Computer Networks(Batch 2: 35-68)","https://accounts.google.com/AccountChooser/signinchooser?continue=https%3A%2F%2Fmeet.google.com%2Fxfa-fgek-qsi%3Fauthuser%3D0&hl=en_GB&flowName=GlifWebSignIn&flowEntry=AccountChooser"],
-                            ["FREE","https://evarsity.srmist.edu.in/"],
-                            ["Open Elective","https://www.youtube.com/watch?v=dQw4w9WgXcQ"]
+                            ["Computer Networks(Batch 2: 35-68)","https://accounts.google.com/AccountChooser/signinchooser?continue=https%3A%2F%2Fmeet.google.com%2Fxfa-fgek-qsi%3Fauthuser%3D0&hl=en_GB&flowName=GlifWebSignIn&flowEntry=AccountChooser"]
     ]);
                             
         var slots=document.getElementsByClassName("row-fluid");
@@ -95,7 +96,7 @@
               <a class="dropdown-toggle"  data-toggle="dropdown" href="#" id="pe1">Professional Elective-1
               <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#" class="pe1" onclick="pe1(0)">IAS</a></li>
+                <li><a href="#" class="pe1" onclick="pe1(0)">FIR</a></li>
                 <li><a href="#"  class="pe1" onclick="pe1(1)">ML</a></li>
                 <li><a href="#"  class="pe1" onclick="pe1(2)">Biometrics</a></li>
               </ul>
@@ -106,7 +107,7 @@
               <a class="dropdown-toggle " data-toggle="dropdown" href="#" id="pe2">Professional Elective-2
               <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#" class="pe2" onclick="pe2(0)">Cryptography</a></li>
+                <li><a href="#" class="pe2" onclick="pe2(0)">PTVA</a></li>
                 <li><a href="#"  class="pe2" onclick="pe2(1)">Hydrology</a></li>
                 <li><a href="#"  class="pe2" onclick="pe2(2)">SSDC</a></li>
               </ul>
